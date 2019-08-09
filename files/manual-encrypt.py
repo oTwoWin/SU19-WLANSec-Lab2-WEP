@@ -4,7 +4,7 @@
 """ Manually decrypt a wep message given the WEP key"""
 
 __author__      = "Seoyeoung Jo, Tommy Gerardi and Daniel Oliveira Paiva"
-__status__ 		= "Prototype"
+__status__ 		= "Not working. We don't see the wepdata information in Wireshark. We have been looking why but we didn't find a solution."
 
 
 from scapy.all import *

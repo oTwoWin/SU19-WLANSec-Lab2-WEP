@@ -2,6 +2,8 @@
 
 ## WEP Security
 
+__Authors :__ Seoyeoung Jo, Tommy Gerardi and Daniel Oliveira Paiva
+
 __Please work in teams of 3 students__
 
 __Korean/Swiss hybrid teams are highly encouraged__
@@ -23,13 +25,13 @@ You will need Scapy but __not__ the Alfa interfaces this time. Please refer to t
 In this part, you will recover the Python script [`manual-decryption.py`](./files/manual-decryption.py) (sorry... Python 2.7 only... the code hasn't been updated to Python 3). You will also need the capture file [`arp.cap`](./files/arp.cap) containing a WEP encrypted ARP message and the library [`rc4.py`](./files/rc4.py) to generate the keystreams needed in order to encrypt/decrypt WEP. All the files need to be copied to the same local folder on your machine.
 
 - Open the capture file [`arp.cap`](./files/arp.cap) with Wireshark
-   
+  
 - Use Wireshark to decrypt the file. For this, you will need to configure in Wireshak the WEP key. (In Wireshark : Preferences&rarr;Protocols&rarr;IEEE 802.11&rarr;Decryption Keys). You will also need to activate decryption in the IEEE 802.11 window (« Enable decryption »). You will find the WEP key in the Python Script [`manual-decryption.py`](./files/manual-decryption.py).
-   
+  
 - Execute the script with `python manual-decryption.py`
-   
+  
 - Compare the output of the script with the capture text decrypted by Wireshark
-   
+  
 - Analyse the code of the script
 
 
