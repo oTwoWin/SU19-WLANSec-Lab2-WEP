@@ -32,6 +32,8 @@ seed = arp.iv+key
 
 icv_encrypted='{:x}'.format(arp.icv).decode("hex")
 
+print arp.icv
+
 print 'icv as shown by Wireshark (encrypted): '+'{:x}'.format(arp.icv)
 
 # Encrypted text including the icv. You need to produce this if you want to decrypt the ICV
